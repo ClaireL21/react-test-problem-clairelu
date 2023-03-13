@@ -7,25 +7,29 @@ import App from './App';
 
 export default {
     title: "Button",
-    text: "Click Me"
+    component: App
 };
 
 //export const ClickButton = () => <App> </App>;
 
 const Template = args => <App {...args} />;
 
-export const State1 = Template.bind({});
-State1.args = {
+export const ButtonState = Template.bind({});
+ButtonState.args = {
     app: {
-        title: "Button in State 1",
-        text: "Click Me"
+        title: "Button",
+        component: App
     }
 }
 
-export const State2 = Template.bind({});
-State2.args = {
-    app: {
-        title: "Button in State 2",
-        text: "Thanks"
-    }
-}
+// export const State2 = Template.bind({});
+// State2.args = {
+//     app: {
+//         title: "Button in State 2",
+//         text: "Thanks"
+//     }
+// }
+
+// export const Primary = () => {
+
+// }
